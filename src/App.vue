@@ -1,26 +1,40 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Tictac/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Tictac from './components/Tictac.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Tictac
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+:root{
+  --primary: #8A4FFF;
+  --dark: #131A26;
+  --grey: #CCC;
+  --light: #EEE;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira sans', sans-serif;
+}
+
+body{
+  background-color: var(--light);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
 </style>
