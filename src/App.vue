@@ -1,14 +1,14 @@
 <template>
-  <Tictac/>
+  <Board/>
 </template>
 
 <script>
-import Tictac from './components/Tictac.vue'
+import Board from './components/Board.vue'
 
 export default {
   name: 'App',
   components: {
-    Tictac
+    Board
   }
 }
 </script>
@@ -34,7 +34,4 @@ body{
   flex-direction: column;
   min-height: 100vh;
 }
-
-
-
 </style>
